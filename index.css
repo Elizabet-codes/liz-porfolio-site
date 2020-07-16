@@ -1,0 +1,213 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rajdhani', sans-serif;
+    background:#00022E;
+   
+    color:#FF073A;
+    height:100vh;
+}
+.my-picture{
+    width:300px;
+    margin:1rem
+}
+.my-picture img{
+    width:100%;
+    border-radius:22% 78% 33% 67% / 30% 30% 70% 70%;
+
+}
+.about-me{
+    margin:1rem 0;
+    padding:.6rem;
+  
+}
+.me-card{
+    width:340px;
+    padding:1rem;
+    margin:auto;
+    box-shadow: 0 20px 50px rgba(8, 112, 184, 0.7);
+}
+
+.title{
+    font-size:1.5rem;
+   color:#247AFD;
+   text-align: end;
+   margin-bottom: 2rem;
+   letter-spacing: .4rem;
+}
+
+.info-me{
+    font-weight: 800;
+    text-align: justify;
+    line-height:2rem;
+  
+}
+.tech-stack{
+    color:#247AFD;
+}
+
+
+.color{
+    font-size:0.8rem;
+}
+
+.tech-stack{
+    font-weight: 800;
+    margin:2rem 0;
+    
+}
+
+.stack{
+    margin:2rem;
+}
+.stack, .color{
+    color:#FDDC5C;
+    list-style:none;
+    letter-spacing: .4rem;
+}
+
+.stack-two{
+    margin-left:4rem;
+}
+
+.stack-three{
+    margin-left:6rem;
+}
+
+.stack-four{
+    margin-left:8rem;
+}
+
+.projects{
+    margin:2rem 0;
+    padding-bottom: 2rem;
+}
+
+.project{
+    height:200px;
+   width:400px;
+    width:100%;
+    font-weight:800;
+  margin:2rem 0;
+  padding:1rem;
+  background:#161841;
+  
+}
+.project-title{
+    color:#FDDC5C;
+    letter-spacing: .4rem;
+    font-size:1.5rem;
+}
+
+.project p{
+    line-height:2rem;
+    letter-spacing:.1rem;
+    margin:2rem 0;
+}
+.project a{
+    text-decoration: none;
+    color:#FDDC5C;
+    font-weight:800;
+
+transition:1s all linear;
+
+
+
+background:#247AFD;
+   
+    padding:1rem;
+   
+
+
+}
+
+
+.project a:hover{
+    color:#00022E;
+}
+
+.contact-icon, .project a{
+    width:50px;
+    height:50px;
+    border-radius:22% 78% 33% 67% / 30% 30% 70% 70%;
+    box-shadow: 0 20px 50px rgba(8, 112, 184, 0.7);
+    cursor:pointer;
+}
+.contact-icon{
+    margin:1rem;
+    color:#FDDC5C;
+    background:#FF073A;
+
+   
+    position:relative;
+   
+}
+
+
+
+.contact-icon i{
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition:color 1s linear;
+}
+
+.contact-icon i:hover{
+    color:#247AFD;
+}
+
+@media(min-width:768px){
+    .me-section{
+        display:flex;
+        
+    }
+    .projects{
+        width:60%;
+        margin:auto;
+        display:flex;
+        /* justify-content: space-around; */
+    }
+    .project{
+        margin:1rem;
+    }
+
+    .project-title{
+       
+        font-size:1rem;
+    }
+
+    .project p{
+        line-height:1.4rem;
+        letter-spacing:.1rem;
+        margin:1.1rem 0;
+    }
+    
+}
+
+
+
+[data-scroll]{
+    transition:all 3s;
+  }
+
+  [data-scroll="in"]{
+
+    transform:translateY(0);
+  
+  }
+
+  
+  
+  [data-scroll="out"]{
+   
+    transform:translateY(-400px);
+    
+  }
