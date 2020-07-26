@@ -171,13 +171,16 @@ background:#247AFD;
         
     }
     .projects{
-        width:60%;
+        width:80%;
         margin:auto;
         display:flex;
+   
+        flex-wrap:wrap;
         /* justify-content: space-around; */
     }
     .project{
         margin:1rem;
+        width:25%;
     }
 
     .project-title{
